@@ -14,7 +14,7 @@ ENV LANGUAGE en_US:en
 ENV TERM screen
 
 # So we can source (see http://goo.gl/oBPi5G)
-#RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Ubuntu softwares
 RUN \
