@@ -103,7 +103,8 @@ RUN \
   && jupyter nbextension enable execute_time/ExecuteTime \   
   && jupyter nbextension enable hide_input/main \   
   && jupyter nbextension enable runtools/main \   
-  && jupyter nbextension enable toggle_all_line_numbers/main 
+  && jupyter nbextension enable toggle_all_line_numbers/main \
+  && jupyter nbextension enable equation-numbering/main
   
 # clone Titresim_ve_Dalgalar itself
 # then move dersnotlari to main folder
