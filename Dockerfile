@@ -116,4 +116,4 @@ RUN \
  && jupyter trust /home/main/dersnotlari/*.ipynb
 
 # UPDATE Docker file on GitHub manually, to rebuilt mybinder image.
-# RUN 1 2 3 4
+# RUN 1 2 3 4 5
