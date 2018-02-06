@@ -109,11 +109,11 @@ RUN \
 # clone Titresim_ve_Dalgalar itself
 # then move dersnotlari to main folder
 # then make .ipynb files trusted
-#RUN \
-#     git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
-# && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
-# && rm -rf /home/main/Titresim_ve_Dalgalar \
-# && jupyter trust /home/main/dersnotlari/*.ipynb
+RUN \
+     git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar_Linux.git \
+ && mv /home/main/Titresim_ve_Dalgalar_Linux/clone_titresim_ve_dalgalar_dersnotlari.ipynb /home/main/ \
+ && rm -rf /home/main/Titresim_ve_Dalgalar_Linux \
+ && jupyter trust /home/main/*.ipynb
 
 # UPDATE Docker file on GitHub manually, to rebuilt mybinder image.
-# RUN 1 2 3 4 5
+# RUN 1 2 3 4 5 6
