@@ -108,7 +108,7 @@ RUN \
   
 # clone Titresim_ve_Dalgalar itself
 # then move dersnotlari to main folder
-# then make .ipynb files trusted
+# then make .ipynb files trusted.
 RUN \
      git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
  && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
