@@ -111,7 +111,7 @@ RUN \
 # then make .ipynb files trusted
 RUN \
      git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar_Linux.git \
- && mv /home/main/Titresim_ve_Dalgalar_Linux/clone_titresim_ve_dalgalar_dersnotlari.ipynb /home/main/ \
+ && mv /home/main/Titresim_ve_Dalgalar_Linux/Titresim_ve_Dalgalar_ders_notlarini_acmak_icin_bu_dosyayi_acin.ipynb /home/main/ \
  && rm -rf /home/main/Titresim_ve_Dalgalar_Linux \
  && jupyter trust /home/main/*.ipynb
 
