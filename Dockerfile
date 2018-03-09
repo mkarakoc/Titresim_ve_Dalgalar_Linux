@@ -66,7 +66,7 @@ RUN jupyter notebook --generate-config
 ADD jupyter_notebook_config.py jupyter_notebook_config.py
 RUN cp jupyter_notebook_config.py /home/main/.jupyter/
 RUN sudo pip install plotly
-RUN sudo apt-get install python-scipy
+RUN sudo apt-get install -y python-scipy
 RUN sudo pip install scipy
 
 # jupyter nbextensions (enable)
