@@ -68,6 +68,7 @@ RUN cp jupyter_notebook_config.py /home/main/.jupyter/
 RUN sudo pip install plotly
 RUN sudo apt-get install -y python-scipy
 RUN sudo pip install scipy
+RUN sudo pip install sympy
 
 # jupyter nbextensions (enable)
 RUN sudo pip install jupyter_contrib_nbextensions
