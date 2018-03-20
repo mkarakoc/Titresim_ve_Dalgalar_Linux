@@ -60,7 +60,7 @@ USER main
 
 # upgrade pip
 RUN sudo pip install --upgrade pip
-RUN sudo pip install --upgrade numpy==1.3
+RUN pip install --user --upgrade numpy==1.3
 
 # Jupyter from pip (since apt-get jupyter is ancient)
 RUN \
