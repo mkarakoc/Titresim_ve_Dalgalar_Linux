@@ -58,6 +58,10 @@ RUN passwd --delete main
 USER main
 ###################
 
+# upgrade pip
+RUN sudo pip install --upgrade pip
+RUN sudo pip install --upgrade numpy==1.3
+
 # Jupyter from pip (since apt-get jupyter is ancient)
 RUN \
   sudo pip install "ipython<6" jupyter
