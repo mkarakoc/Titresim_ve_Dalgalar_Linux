@@ -60,7 +60,6 @@ USER main
 
 # upgrade pip
 RUN sudo pip install --upgrade pip
-RUN pip install --user --upgrade numpy==1.3
 
 # Jupyter from pip (since apt-get jupyter is ancient)
 RUN \
@@ -121,6 +120,8 @@ RUN \
  && mv /home/main/Titresim_ve_Dalgalar_Linux/Titresim_ve_Dalgalar_ders_notlarini_acmak_icin_bu_dosyayi_acin.ipynb /home/main/ \
  && rm -rf /home/main/Titresim_ve_Dalgalar_Linux \
  && jupyter trust /home/main/*.ipynb
+
+RUN pip install --user --upgrade numpy==1.3
 
 # UPDATE Docker file on GitHub manually, to rebuilt mybinder image.
 # RUN 1 2 3 4 5 6
